@@ -1,0 +1,70 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+ 
+	<head>
+	 <title>Webpage Request</title>
+	</head>
+		
+	<!-- cor de fundo da tela --> 	
+	<body style="background-color:#CCFFFF;">
+	 	
+		<!-- formulário envia os dados para webserver.py -->
+		<form action="webserver.py" method="post" align="left">
+		
+			<!-- caixa com as opções da máquina 1-->
+			<div style="float:left;">
+			<fieldset>
+				<legend><b>Maquina 1</b></legend>
+				<table cellspacing="10">
+					<p style="font-size:20px;">
+						<input type="checkbox"/ name="maquina1[]" value="ps"> ps </input><br>
+						<input type="checkbox"/ name="maquina1[]" value="df"> df </input></br>
+						<input type="checkbox"/ name="maquina1[]" value="finger"> finger </input></br>
+						<input type="checkbox"/ name="maquina1[]" value="uptime"> uptime </input></br>	
+					</p>
+				</table>
+			</fieldset>
+		
+		
+			<!-- caixa com as opções da máquina 2-->
+			<br>
+			<fieldset>
+				<legend><b>Maquina 2</b></legend>
+				<table cellspacing="10">
+					<p style="font-size:20px;">
+						<input type="checkbox"/ name="maquina2[]" value="ps"> ps </input><br>
+						<input type="checkbox"/ name="maquina2[]" value="df"> df </input></br>
+						<input type="checkbox"/ name="maquina2[]" value="finger"> finger </input></br>
+						<input type="checkbox"/ name="maquina2[]" value="uptime"> uptime </input></br>
+					</p>
+				</table>
+			</fieldset>
+		
+			<!-- caixa com as opções da máquina 3-->
+			<br>
+			<fieldset>
+				<legend><b>Maquina 3</b></legend>
+				<table cellspacing="10">
+					<p style="font-size:20px;">
+						<input type="checkbox"/ name="maquina3[]" value="ps"> ps </input><br>
+						<input type="checkbox"/ name="maquina3[]" value="df"> df </input></br>
+						<input type="checkbox"/ name="maquina3[]" value="finger"> finger </input></br>
+						<input type="checkbox"/ name="maquina3[]" value="uptime"> uptime </input></br>
+					</p>
+				</table>
+			</fieldset>
+			<br>
+		
+			<!-- botão Clear para desmarcar todas as seleções e botão Submit para enviar solicitação -->
+			<input type="reset" style="width:100px;height:50px" value="Clear"> 	
+			<input type="submit" style="width:100px;height:50px" value="Submit">
+		
+		</form>
+		
+	</body>
+ 
+</html>
+
